@@ -1,12 +1,12 @@
 # This .gitignore file should be placed at the root of your Unity project directory
 #
-# Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
+# Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
+[Ll]ibrary/
+[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
-/[Bb]uilds/
+[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
@@ -14,8 +14,8 @@
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
 
-# Recordings can get excessive in size
-/[Rr]ecordings/
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/[Aa]ssets/**/*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -26,6 +26,8 @@
 # Visual Studio cache directory
 .vs/
 
+
+
 # Gradle cache directory
 .gradle/
 
@@ -33,7 +35,7 @@
 ExportedObj/
 .consulo/
 *.csproj
-*.unityproj
+/*.unityproj
 *.sln
 *.suo
 *.tmp
@@ -48,9 +50,9 @@ ExportedObj/
 *.VC.db
 
 # Unity3D generated meta files
-*.pidb.meta
-*.pdb.meta
-*.mdb.meta
+/*.pidb.meta
+/*.pdb.meta
+/*.mdb.meta
 
 # Unity3D generated file on crash reports
 sysinfo.txt
@@ -58,8 +60,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.aab
-*.unitypackage
-*.app
+/*.unitypackage
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -70,3 +71,12 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+*.dwlt
+*.txt 
+/*.meta
+*.md
+*.prefs
+*.graph
+*.uss 
+*.psd
+*.cginc
