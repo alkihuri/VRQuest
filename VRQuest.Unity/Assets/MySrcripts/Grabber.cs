@@ -17,6 +17,7 @@ public class Grabber : MonoBehaviour
                 if (Input.GetButtonDown("Fire1"))     //если  нажата клавиша Fire1
                 {
                     objectOnHitLine.transform.SetParent(transform);    /// прикрепить к объекту со скриптом 
+                    objectOnHitLine.transform.gameObject.GetComponent<CubeController>().IsInbox = false;
                     objectOnHitLine.transform.position = transform.forward * 3; /// закрепить позицию схваченого объекта
                     Destroy(objectOnHitLine.transform.gameObject.GetComponent<Rigidbody>()); /// отключаем Rigidbody/Гравитацию 
                 }

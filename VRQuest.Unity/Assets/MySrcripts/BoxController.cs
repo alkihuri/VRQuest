@@ -9,6 +9,7 @@ public class BoxController : MonoBehaviour
         if(other.gameObject.tag=="Grabbed")
         {
             other.transform.SetParent(transform);
+            other.gameObject.GetComponent<CubeController>().IsInbox = true;
             Destroy(other.gameObject.GetComponent<Rigidbody>());
             other.transform.position = transform.position + new Vector3(0, 1, 0);
         }

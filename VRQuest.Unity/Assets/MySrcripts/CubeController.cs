@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class CubeController : MonoBehaviour
 {
     public string key = "";
+    public bool IsInbox;
     void Start()
-    { 
-
+    {
+        IsInbox = false;
     }
 
     void Update()
