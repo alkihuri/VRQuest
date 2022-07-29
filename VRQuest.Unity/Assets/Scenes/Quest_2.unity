@@ -444,7 +444,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fb6ffb8aed575e54cba91db2b5dc5bc7, type: 2}
+  - {fileID: 2100000, guid: 8848f1a96a44475428021ddd3c6f10fa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -844,7 +844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c1a8e62e7f9de845a29e568fb382103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  word: Cyprus
+  word: Apple
   cube: {fileID: 2395080528454438834, guid: 0a5d68c4c87b95a47849697fa10cf048, type: 3}
   box: {fileID: 1292985306370457505, guid: 262dc64fd928bac42957b248bc84f911, type: 3}
 --- !u!4 &2127756026
@@ -873,5 +873,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e27ab04109d9641bd36d6d039c6b0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalWord: Cyprus
-  nextScene: Quest_2
+  originalWord: Apple
+  nextScene: FinishScene

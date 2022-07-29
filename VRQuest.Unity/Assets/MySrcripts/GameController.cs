@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        word = "Cyprus"; /// присваиваем значение  
+         
         for(int i=0;i<word.Length;i++) /// по количеству бук в слове...
         {
             MakeCube(word[i].ToString()); /// ...вызываем функцию создания куба  и передаем ей букву
