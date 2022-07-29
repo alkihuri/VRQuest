@@ -4,10 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
-{ 
-
-    public void StartGame()
+{
+     public void GameStart()
     {
-        SceneManager.LoadSceneAsync("Quest");
+        SceneManager.LoadScene("Quest");
+    }
+    public void StartScene()
+    {
+        SceneManager.LoadScene("StartScene");
     }
 }
